@@ -1,0 +1,569 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231f20;
+    padding: 15px 5%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.logo-box {
+    background-color: white;
+    padding: 10px 80px;
+    border-radius: 15px;
+}
+
+.logo {
+    color: #004881;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.nav-links-container {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    margin-left: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.right-items {
+    display: flex;
+    gap: 20px;
+}
+
+.quote, .phone {
+    padding: 15px 20px;
+    transform: skew(-10deg);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    background-color: #00aeff;
+}
+
+.phone {
+    background-color: #231f20;
+    border: 2px solid white;
+}
+
+.quote span, .phone span {
+    display: inline-block;
+    transform: skew(10deg);
+    color: white;
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: transparent;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    transform: skew(-10deg);
+    font-size: 14px;
+}
+
+.availability span {
+    display: inline-block;
+    transform: skew(10deg);
+    color: white;
+    margin-right: 5px;
+}
+
+.green-circle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(167, 255, 167);
+    border-radius: 50%;
+    transform: skew(10deg);
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links-container {
+        order: 1;
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .right-items {
+        order: 3;
+    }
+
+    .logo-box {
+        order: 2;
+        margin-bottom: 10px;
+    }
+}
+
+.hero-section {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.left-background, .right-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-background {
+    left: 0;
+    right: 25%;
+    background-image: url('Links/plumbing-cost-hydro-blog-cont-img.jpg');
+    z-index: 1;
+}
+
+.right-background {
+    left: 40%;
+    right: 0;
+    background-image: url('Links/technician-banner.png');
+    z-index: 2;
+}
+
+.rating-container {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    display: flex;
+    z-index: 10;
+}
+
+.skewed-box {
+    background-color: #0e76ff;
+    color: #ffffff;
+    padding: 20px;
+    transform: skew(-10deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: 30px;
+    width: 160px;
+    height: 190px;
+}
+
+.rating-number {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    transform: skew(10deg);
+}
+
+.rating-labels {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: skew(10deg);
+}
+
+.rating-label {
+    font-size: 10px;
+}
+.company-label {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#google {
+    background-color: red;
+}
+
+#emg-service {
+    color: black;
+    background-color: #ffd100;
+    font-weight: bold;
+}
+
+#emg-service .rating-number {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    transform: skew(10deg);
+}
+
+#emg-service .services-label {
+    font-size: 25px;
+    text-align: center;
+    transform: skew(10deg);
+}
+
+.section-heading {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    top: 20px;
+    left: 20px;
+    margin: 150px;
+    margin-bottom: 0;
+    width: 800px;
+    z-index: 10;
+}
+.section-heading h2 {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.section-heading .highlight {
+    background-color: #006eff;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #00aeff;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.feature-content p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    font-weight: lighter;
+}
+
+@media (max-width: 1200px) {
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skewed-box {
+        margin-left: 10px;
+        width: 140px;
+    }
+
+    .section-heading {
+        font-size: 2.5em;
+        width: 60%;
+    }
+
+    .feature-content h3 {
+        font-size: 1.2em;
+    }
+
+    .feature-content p {
+        font-size: 0.9em;
+    }
+
+    .rating-number {
+        font-size: 2.5em;
+    }
+
+    .company-label {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-background, .right-background {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .section-heading {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 5%;
+        margin: 0;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .feature-content {
+        text-align: center;
+    }
+
+    .feature-content h3 {
+        font-size: 1.5em;
+    }
+
+    .feature-content p {
+        font-size: 0.8em;
+    }
+
+    .rating-container {
+        bottom: 5%;
+        right: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skewed-box {
+        width: 80%;
+        min-width: unset;
+        margin: 10px 0;
+        transform: skew(0);
+        text-align: center;
+    }
+
+    .rating-number {
+        font-size: 2em;
+    }
+
+    .company-label {
+        font-size: 1em;
+    }
+}
+
+
+.grey-section {
+    background-color: #f0f0f0;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.quote-container {
+    max-width: 900px;
+    text-align: left;
+    margin: 150px;
+    flex: 1 1 300px;
+}
+
+.quote-container h2 {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.quote-container .highlight {
+    color: #00aeff;
+}
+
+.quote-container p {
+    font-size: 1.5em;
+    word-spacing: 5px;
+    line-height: 1.5;
+}
+
+.image-container-phone {
+    max-width: 50%;
+    width: 200px;
+    margin-top: 150px;
+    flex: 1 1 400px;
+}
+
+.image-container-phone img {
+    width: 50%;
+    height: auto;
+    max-width: none;
+    flex: 1;
+    display: flex;
+}
+
+.fees-container {
+    margin-top: 250px;
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#call-fees {
+    background-color: #00aeff;
+    font-weight: bold;
+    transform: skew(-5deg);
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    max-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#call-fees::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px dashed white;
+    box-shadow: 0 0 0 15px #00aeff;
+}
+
+.price-number {
+    font-size: 7em;
+    transform: skew(5deg);
+}
+
+.call-fees-label {
+    font-size: 2em;
+    transform: skew(5deg);
+}
+
+@media (max-width: 1200px) {
+    .quote-container h2 {
+        font-size: 2em;
+    }
+
+    .quote-container p {
+        font-size: 1.1em;
+    }
+
+    .price-number {
+        font-size: 2.5em;
+    }
+
+    .call-fees-label {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .quote-container {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .quote-container h2 {
+        font-size: 1.8em;
+    }
+
+    .quote-container p {
+        font-size: 1em;
+    }
+
+    .image-container-phone {
+        width: 80%;
+    }
+
+    .fees-container {
+        margin: 10px;
+    }
+
+    #call-fees {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .price-number {
+        font-size: 2em;
+    }
+
+    .call-fees-label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-container h2 {
+        font-size: 1.5em;
+    }
+
+    .quote-container p {
+        font-size: 0.9em;
+    }
+
+    .image-container-phone {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .fees-container {
+        margin: 10px 0;
+    }
+
+    #call-fees {
+        max-width: 180px;
+        height: 180px;
+    }
+
+    .price-number {
+        font-size: 1.8em;
+    }
+
+    .call-fees-label {
+        font-size: 0.9em;
+    }
+}
+
+
